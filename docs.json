@@ -37,13 +37,7 @@
     "dark": "/logo/dark.png"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Soporte",
-        "href": "https://soporte.coinboxmarketing.com"
-      }
-    ],
-    "primary": {
+"primary": {
       "type": "button",
       "label": "Ir a Arquitex",
       "href": "https://arquitex.app"
