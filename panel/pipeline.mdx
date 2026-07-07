@@ -1,0 +1,90 @@
+---
+title: "Pipeline"
+description: "¿Cómo van las obras?"
+icon: "square-kanban"
+---
+
+El Pipeline es el tablero de tus obras. Cada tarjeta es una **oportunidad de proyecto** — no una persona — y las columnas te muestran en qué punto del proceso está cada una. De un vistazo respondés: ¿cuántas obras tengo entre manos, en qué estado, y cuáles necesitan un empujón?
+
+## Las etapas
+
+El tablero tiene 6 etapas. Las primeras cuatro **se mueven solas** — Arquitex detecta la actividad y avanza la obra. Las últimas dos las movés vos, porque solo vos sabés cuándo pasaron.
+
+| Etapa | ¿Quién la mueve? | Cuándo |
+|---|---|---|
+| **Nuevo** | Sola | Entra el lead (formulario, primer mensaje o alta manual) |
+| **En conversación** | Sola | El bot o tu equipo empieza a hablar con el lead |
+| **Llamada agendada** | Sola | Se agenda una reunión |
+| **Llamada efectuada** | Sola | La reunión se marca como realizada |
+| **Propuesta enviada** | Vos | Le mandaste la propuesta o presupuesto |
+| **Visita agendada** | Vos | Coordinaste una visita al terreno u obra |
+
+<Tip>
+Podés renombrar las etapas y cambiarles el color desde Configuración. Los nombres de arriba son los de fábrica.
+</Tip>
+
+Cada columna muestra cuántas obras tiene y la **suma de honorarios** de esa etapa.
+
+## Qué muestra cada tarjeta
+
+- **El título de la obra**, que se arma solo: `{Tipo} · {Rubro} en {Zona}` — por ejemplo, *Obra nueva · Casa en Villa Allende*. El pipeline habla de obras; el cliente acompaña.
+- **Los honorarios** (en verde), si están cargados.
+- **El cliente**, en la segunda línea.
+- **Chips** con los m², el horizonte de inicio (*Arranca ya* y *0-3 meses* se resaltan en ámbar: son los calientes) y los **días en la etapa**.
+
+<Note>
+Si una obra lleva **15 días o más sin moverse de etapa**, el chip de tiempo se pinta en ámbar. Es la señal de que está estancada. El botón **Estancadas · 15+ días** filtra el tablero para verlas todas juntas.
+</Note>
+
+## Mover y cerrar obras
+
+- **Mover de etapa**: arrastrá la tarjeta a otra columna, o cambiá la etapa desde el detalle de la obra.
+- **Cerrar**: mientras arrastrás una tarjeta aparecen dos zonas al pie — **Ganada** y **Perdida** — donde la podés soltar. También podés cerrarla desde el menú `···` de la tarjeta o desde el detalle.
+- Al marcar una obra como **Perdida**, Arquitex te pregunta por qué: *Precio*, *Eligió otro estudio*, *Dejó de responder*, *Fuera de perfil*, *No es el momento* u *Otro*. Ese motivo alimenta tu reporte semanal — cargalo siempre.
+- **No-show** registra que el lead faltó a la reunión.
+
+Toda obra cerrada se puede **reabrir** desde su detalle. Y si un lead dado por muerto vuelve a escribir, ARQUI lo rescata solo.
+
+## El detalle de la obra
+
+Al tocar una tarjeta se abre el panel de la obra:
+
+- **Lectura de ARQUI**: un resumen generado por la IA de qué quiere el lead y cuál es la próxima jugada.
+- **Proyecto**: m², zona, etapa del proyecto y cuándo arranca — todo editable en el lugar.
+- **Honorarios**: el valor de la obra, con el botón **Sugerir con ARQUI** (ver abajo).
+- **Agenda**: las reuniones de esta obra.
+- **Conversación**: link directo al chat del lead en el Inbox.
+- **Actividad**: la línea de tiempo completa de la obra, donde también podés **agregar notas**.
+
+### Sugerir honorarios con ARQUI
+
+Si no sabés qué valor ponerle a una obra, tocá **Sugerir con ARQUI**. ARQUI cruza los datos del proyecto con tu tarifa por m² y con **tus propias obras comparables** (proyectos similares que ganaste o perdiste, y a qué valor), y te propone un monto con su justificación.
+
+ARQUI **propone, nunca escribe solo**: el valor se aplica únicamente si tocás **Usar este valor**.
+
+<Tip>
+Cargá los m² antes de pedir la sugerencia — con los m² la estimación es mucho mejor.
+</Tip>
+
+## Limpieza del pipeline
+
+Cuando una obra pasa **más de 30 días** sin señales de vida del lead (no responde y no hay reunión futura), ARQUI la junta en un banner arriba del tablero: *"ARQUI encontró N obras sin señales de vida hace más de 30 días"*.
+
+Al tocarlo, revisás la lista fila por fila y decidís:
+
+- **Cerrar como perdida** — queda registrada con motivo *"Dejó de responder"*.
+- **Sigue viva** — la sacás de la limpieza por 30 días más.
+
+ARQUI **nunca cierra una obra solo**: cada baja es una decisión tuya de un tap. Y si el lead vuelve a escribir después de cerrada, ARQUI la revive automáticamente.
+
+## Buscar y filtrar
+
+Arriba del tablero tenés búsqueda por cliente, obra o zona; orden por *Recientes*, *Mayor valor* o *Más días en etapa*; y filtros por **rubro** y por **fit** (cualificado / no cualificado).
+
+## Vista Cerradas
+
+El toggle **Abiertas / Cerradas** cambia a la vista de obras terminadas: **Ganadas** y **Perdidas** lado a lado, con chips para filtrar por motivo de pérdida. Es el lugar para repasar por qué se pierden obras — el mismo dato que el Reporte te muestra agregado.
+
+## Crear una obra a mano
+
+La mayoría de las obras entran solas (web, WhatsApp). Para las que llegan por otro lado — un referido, un llamado — usá **Nueva oportunidad**: nombre y teléfono son lo único obligatorio; rubro, tipo de obra y m² ayudan a que el título y el fit se armen bien.

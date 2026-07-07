@@ -9,25 +9,40 @@
   },
   "favicon": "/favicon.png",
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "Guías",
-        "groups": [
-          {
-            "group": "Primeros pasos",
-            "pages": [
-              "index",
-              "guias/setup-inicial",
-              "guias/integrar-cuentas-publicitarias"
-            ]
-          },
-          {
-            "group": "Herramientas",
-            "pages": [
-              "guias/comprar-dominio",
-              "guias/instalar-asistente-reunion"
-            ]
-          }
+        "group": "Empezar",
+        "pages": [
+          "index",
+          "empezar/primeros-pasos"
+        ]
+      },
+      {
+        "group": "El panel",
+        "pages": [
+          "panel/acciones",
+          "panel/reporte",
+          "panel/contactos",
+          "panel/inbox",
+          "panel/pipeline",
+          "panel/agenda"
+        ]
+      },
+      {
+        "group": "Arquitex trabaja solo",
+        "pages": [
+          "automatico/bot-whatsapp",
+          "automatico/arqui",
+          "automatico/filtro-de-leads",
+          "automatico/avisos"
+        ]
+      },
+      {
+        "group": "Tu estudio",
+        "pages": [
+          "estudio/equipo",
+          "estudio/tu-web",
+          "estudio/configuracion"
         ]
       }
     ]
@@ -37,10 +52,10 @@
     "dark": "/logo/dark.png"
   },
   "navbar": {
-"primary": {
+    "primary": {
       "type": "button",
-      "label": "Ir a Arquitex",
-      "href": "https://arquitex.app"
+      "label": "Ir al panel",
+      "href": "https://panel.arquitex.app"
     }
   },
   "footer": {

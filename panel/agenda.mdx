@@ -1,0 +1,41 @@
+---
+title: "Agenda"
+description: "¿Qué reuniones tengo?"
+icon: "calendar"
+---
+
+La Agenda muestra todas las reuniones del estudio — las que agendó el bot solo (van con 🤖) y las que cargaste a mano — en dos vistas: **mes** (grilla de calendario) y **lista** (agrupada por día, con las pasadas plegadas). Si son varios en el equipo, podés filtrar por miembro.
+
+## Estados de una reunión
+
+| Estado | Qué significa |
+|---|---|
+| **Próxima** (azul) | Agendada a futuro |
+| **Sin marcar** (naranja) | Ya pasó y falta cargar cómo salió — pide acción |
+| **Asistió** (verde) | La reunión se hizo |
+| **No asistió** (rojo) | El lead faltó |
+
+<Note>
+Marcar el resultado importa: **Asistió** avanza la obra a *Llamada efectuada* en el pipeline, y **No asistió** dispara el circuito de reagendado. Si te olvidás, ARQUI te lo recuerda con la acción *"Reunión sin resultado"* — y también podés marcarlo respondiendo el aviso de WhatsApp que te llega después de cada reunión, con los botones **Asistió / No asistió**.
+</Note>
+
+## El detalle de una reunión
+
+Al tocar un evento ves fecha, a quién del equipo está asignada y su estado, con las acciones: **Abrir Meet**, **Ver lead en pipeline**, **Reagendar**, marcar **Asistió / No asistió** (si ya pasó) o **Cancelar reunión**.
+
+## Cómo se agendan las reuniones solas
+
+Este es el corazón del sistema: **el lead agenda sin ida y vuelta de coordinación**. Dos caminos:
+
+1. **Por el bot de WhatsApp**: cuando la conversación madura, el bot consulta la disponibilidad real del equipo (nunca inventa un horario), ofrece opciones y agenda. Le pide el email al lead para invitarlo por Google Calendar; si no lo da, agenda igual y el link viaja por WhatsApp.
+2. **Por tu página pública de reservas** (`tuestudio.arquitex.app/agenda`): el lead elige día y horario entre los disponibles y confirma. Más detalle en [Tu web](/estudio/tu-web).
+
+En ambos casos Arquitex crea el evento en **Google Calendar con link de Meet automático**, se lo asigna a un miembro libre del equipo, mueve la obra a *Llamada agendada* y programa **tres recordatorios al lead por WhatsApp**: un día antes, la mañana de la reunión y 5 minutos antes con el link de Meet.
+
+<Tip>
+La disponibilidad que ve el lead sale de dos lugares: los **horarios de atención de cada miembro** (Configuración → Calendario y agenda) y los **parámetros del estudio** — duración, buffer, anticipación mínima y ventana de días (Configuración → Reuniones).
+</Tip>
+
+## Crear una reunión a mano
+
+Para las reuniones que coordinás por afuera, el botón **+ Nueva reunión**: nombre, teléfono, fecha y hora, quién la toma, y opcionalmente el email del lead y el link de Meet. Si el horario se solapa con otra reunión del mismo miembro, te avisa — pero podés confirmar igual: acá mandás vos.
