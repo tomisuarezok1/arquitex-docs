@@ -21,11 +21,12 @@
         "group": "El panel",
         "pages": [
           "panel/acciones",
-          "panel/reporte",
-          "panel/contactos",
           "panel/inbox",
           "panel/pipeline",
-          "panel/agenda"
+          "panel/agenda",
+          "panel/contactos",
+          "panel/reporte",
+          "panel/campanas"
         ]
       },
       {
@@ -40,9 +41,11 @@
       {
         "group": "Tu estudio",
         "pages": [
+          "estudio/configuracion",
+          "estudio/whatsapp",
           "estudio/equipo",
           "estudio/tu-web",
-          "estudio/configuracion"
+          "estudio/planes"
         ]
       }
     ]

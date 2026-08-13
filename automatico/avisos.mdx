@@ -4,32 +4,46 @@ description: "¿Qué te llega y cuándo?"
 icon: "bell"
 ---
 
-Arquitex te avisa por **WhatsApp** y/o **email** — cada persona del equipo elige qué recibe y por dónde, en **Configuración → Notificaciones**. La idea: no tener que entrar al panel "a ver si pasó algo"; si pasó algo, te enteras.
+Arquitex te avisa por **WhatsApp**, **email** y **push de la PWA**. Cada persona del equipo elige qué recibe y por dónde, en **Ajustes → Notificaciones**. La idea: no tener que entrar al panel "a ver si pasó algo".
+
+El push es el tercer canal. En el celular, con la app instalada, el aviso llega aunque no estés mirando Chats. En iOS hace falta la PWA instalada.
 
 ## Los avisos al instante
 
-Cuatro situaciones urgentes disparan un aviso en el momento, con la cita textual de lo que dijo el lead:
+Situaciones urgentes disparan un aviso en el momento, con la cita de lo que dijo el lead:
 
 | Aviso | Cuándo |
 |---|---|
-| **Lead pide una persona** | Un lead pidió ser atendido por un humano (el bot ya se corrió) |
+| **Lead pide una persona** | Un lead pidió ser atendido por un humano (el asistente ya se corrió) |
 | **Lead caliente** | Un lead mostró decisión de arrancar — para llamarlo en el momento |
 | **Lead frustrado** | La conversación está frustrando a un lead |
 | **Perdido que vuelve** | Un lead dado por perdido volvió a escribir |
+| **Lead sin atender** | Un lead calificado quedó esperando y nadie lo tomó |
 
 Si el lead insiste con lo mismo, no hay re-aviso — un solo push por situación.
 
+WhatsApp (el número personal del miembro, no el del estudio) se usa para pocos tipos: reporte semanal, asistencia, y cuando el lead pide una persona. El resto va por email y push.
+
 ## Los avisos de ritmo
 
-- **Reporte semanal** — los lunes, el resumen de la semana: valor protegido, horas ahorradas, consultas respondidas, leads recuperados, reuniones agendadas.
-- **Resumen matutino de ARQUI** — de lunes a viernes a la mañana, cuántas acciones te esperan y cuántas son urgentes.
-- **Nuevo lead** — cuando entra un lead nuevo al estudio.
+- **Reporte semanal** — los lunes, el resumen de la semana. Equipo y Escala; en Solo esa capa no está.
+- **Resumen matutino de ARQUI** — de lunes a viernes, cuántas acciones te esperan. También de Equipo y Escala.
+- **Nuevo lead** — cuando entra un lead nuevo.
 - **Reunión agendada** — cuando se agenda o reagenda una reunión asignada a vos.
+
+## Cupo del plan
+
+Al **80%** y al **100%** de los leads calificados del mes te llega un aviso (email y push):
+
+- 80%: *Vas por el 80% de los leads de tu plan* — podés subir de plan desde Facturación.
+- 100%: *Llegaste al límite* — el bot sigue atendiendo; los leads de más se suman a US$2 cada uno (en períodos pagos).
+
+Detalle en [Planes](/estudio/planes).
 
 ## El aviso de asistencia
 
-Después de cada reunión, Arquitex le pregunta al miembro que la atendió si el lead asistió — por WhatsApp, con dos botones: **Asistió / No asistió**. Responder ahí mismo ya actualiza el pipeline: *Asistió* avanza la obra a *Llamada efectuada*; *No asistió* la devuelve a *En conversación* y activa el reagendado.
+Después de cada reunión, Arquitex le pregunta al miembro que la atendió si el lead asistió — por WhatsApp, con dos botones: **Asistió / No asistió**. Responder ahí mismo actualiza el tablero: *Asistió* avanza a *Llamada efectuada*; *No asistió* vuelve a *En conversación* y activa el reagendado.
 
 <Tip>
-Para recibir por WhatsApp, cargá tu número en **Configuración → Perfil**. Sin número, los avisos van igual por email.
+Para recibir por WhatsApp, cargá tu número en **Ajustes → Perfil**. Sin número, los avisos van igual por email y push.
 </Tip>

@@ -1,10 +1,16 @@
 ---
-title: "Acciones"
+title: "ARQUI"
 description: "¿Qué hago ahora?"
 icon: "sparkles"
 ---
 
-Acciones es la primera página del panel y la que ordena tu día. ARQUI escanea todo el estudio — conversaciones, obras, reuniones — y arma la lista de **lo que amerita que hagas algo hoy**, con lo urgente primero. No tenés que revisar nada vos: si algo necesita tu atención, aparece acá.
+ARQUI es la cola de lo urgente. El path es `/arqui`. Coaching y prioridades viven **acá**, no en el [Reporte](/panel/reporte).
+
+ARQUI escanea conversaciones, proyectos y reuniones, y arma la lista de **lo que amerita que hagas algo hoy**, con lo urgente primero. Nunca ejecuta solo.
+
+## Plan Solo
+
+En Solo, `/arqui` muestra un upsell: **Prioridades y coaching son de Equipo**. La cola, el coaching del día y el reporte semanal están en Equipo y Escala. El asistente de WhatsApp y el nurturing siguen iguales — [Planes](/estudio/planes).
 
 ## Qué es una acción
 
@@ -21,15 +27,17 @@ Las situaciones que ARQUI detecta:
 | **Lead sin responder** | Un lead espera respuesta tuya |
 | **Propuesta estancada** | Mandaste propuesta y no hubo novedades |
 | **No-show** | El lead faltó a la reunión y no se reagendó |
-| **Oportunidad trabada** | Una obra lleva demasiado sin moverse |
+| **Oportunidad trabada** | Un proyecto lleva demasiado sin moverse |
 | **Reunión sin resultado** | Hubo reunión pero no cargaste cómo salió |
-| **Propuesta sin enviar** | La obra avanzó pero la propuesta no salió |
+| **Propuesta sin enviar** | El proyecto avanzó pero la propuesta no salió |
 | **Volvió a escribir** | Un lead dado por perdido reapareció |
-| **Pide una persona** | El lead pidió hablar con un humano — el bot ya se corrió |
+| **Pide una persona** | El lead pidió hablar con un humano — el asistente ya se corrió |
 | **Quiere arrancar** | ARQUI leyó decisión clara de avanzar YA |
 | **Se está frustrando** | La conversación está incomodando al lead |
 
 Las últimas tres las detecta ARQUI **leyendo el contenido** de la conversación; el resto sale del estado del pipeline.
+
+Arriba de la cola, la franja **ARQUI · tu gerente comercial** es el pulso del día: dónde se tranca el proceso y un atajo al lugar del problema (estancadas, agenda, descartados).
 
 ## Foco o Lista
 
@@ -44,19 +52,21 @@ El botón **Actualizar** re-escanea el estudio en el momento, por si acabás de 
 
 ## Resolver una acción
 
-El botón principal abre un modal con todo el contexto arriba — quién es el lead, cuánto espera, la **Lectura de ARQUI** con la próxima jugada, y el link a la conversación — y la acción abajo. Algunos ejemplos:
+El botón principal abre un modal con el contexto — quién es el lead, cuánto espera, la lectura de ARQUI con la próxima jugada, y el link a la conversación — y la acción abajo. Algunos ejemplos:
 
 - **Responder por WhatsApp**: ves los últimos mensajes y un **borrador de ARQUI ya redactado y editable**. Lo ajustás si querés y tocás *Enviar ahora*. Si la ventana de 24 horas ya cerró, te ofrece llamar o mandar una plantilla de reenganche.
 - **Reagendar**: borrador con el link de reagendado listo para enviar, o cargás vos un horario nuevo.
 - **Cargar resultado** (después de una reunión): *Ganada*, *Avanzó — mandó a propuesta*, *Sigue viva* (con nota) o *Perdida* (con motivo).
-- **¿La reabrimos?** (un perdido que volvió): reabrir la obra en su etapa, leer la conversación primero, o confirmarla perdida.
+- **¿La reabrimos?** (un perdido que volvió): reabrir el proyecto en su etapa, leer la conversación primero, o confirmarlo perdido.
 
 Cuando no querés resolverla ahora, la **✕** de cada tarjeta ofrece: **Ya lo hice**, **Posponer hasta mañana** o **Descartar**.
 
 <Note>
-Si marcás una obra como *"Sigue viva"*, ARQUI la deja tranquila y vuelve a preguntar en 14 días si sigue abierta. Nada se pierde de vista.
+Si marcás un proyecto como *"Sigue viva"*, ARQUI lo deja tranquilo y vuelve a preguntar en 14 días si sigue abierto. Nada se pierde de vista.
 </Note>
 
 ## Cuando no hay nada
 
-Si la cola está vacía, ves **"Estás al día 🎯"**. Es el estado al que querés llegar todos los días — y el punto de Arquitex: cuando no hay tarjetas, de verdad no hay nada esperándote.
+Si la cola está vacía, ves **"Estás al día 🎯"**. Es el estado al que querés llegar todos los días: cuando no hay tarjetas, no hay nada esperándote.
+
+En el celular, ARQUI es el botón flotante. El badge de la barra lateral es el conteo de esta cola.
