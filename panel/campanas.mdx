@@ -1,0 +1,100 @@
+---
+title: "Campañas"
+description: "Cómo conectar Meta y Google, ver el gasto y lanzar pauta CTWA o Search desde Arquitex."
+icon: "megaphone"
+---
+
+Campañas es una sección del panel, no un formulario escondido en Ajustes. Solo el dueño del estudio la ve. El path es `/campanas`.
+
+Desde acá conectás Facebook (página, cuenta de anuncios y pixel), ves gasto / leads / reuniones —incluidas las campañas que corre una agencia— y lanzás pauta de Arquitex.
+
+## Qué ves
+
+Arriba: **gasto, leads y reuniones** del período. Si hay campañas de agencia o de Meta Ads Manager, también entran en esos números.
+
+Abajo: **Tus campañas de Arquitex**. Pausar y reanudar. Crear campaña te lleva a `/campanas/nueva`.
+
+<Note>
+  El gasto de pauta lo cobrás Meta o Google, no Arquitex. La suscripción de Arquitex es otra cosa — [Planes](/estudio/planes).
+</Note>
+
+## Conectar Facebook
+
+OAuth, no tokens pegados.
+
+1. En `/campanas` o en **Ajustes → Campañas** (tab Meta), **Conectar Facebook**.
+2. Elegís **página**, **cuenta de anuncios** y **pixel**, en ese orden.
+3. Listo. Arquitex puede leer campañas existentes y publicar CTWA.
+
+El token de CAPI es **modo avanzado**. La conexión normal es OAuth. No hace falta pegar pixel ID ni access token a mano.
+
+Google se conecta igual, por OAuth, en el tab Google de Ajustes → Campañas. Eso habilita Enhanced Conversions for Leads. El tab aparece si Google Ads está habilitado en tu cuenta.
+
+## Crear campaña
+
+`/campanas/nueva` es un picker: **Meta** o **Google**.
+
+### Objetivos
+
+Los mismos en los dos canales:
+
+- Remodelación
+- Obra nueva
+- Dirección técnica
+- Interiorismo
+
+### Límite por plan
+
+**Solo** = 1 campaña activa en **todos** los canales juntos. Si ya tenés una de Meta corriendo, no podés publicar otra de Google hasta pausarla.
+
+Equipo y Escala: ilimitadas.
+
+## Meta: Click to WhatsApp
+
+CTWA. El lead toca el anuncio y cae en WhatsApp, donde responde tu asistente.
+
+<Steps>
+  <Step title="Fotos">
+    Elegís de la galería del estudio — las mismas `studio_photos` de la web. No hay un banco paralelo.
+  </Step>
+  <Step title="Tres propuestas de IA">
+    **Limpia**, **banda** y **caja**. Cada una con copy distinto. Los ganchos tienen tope: banda ≤ 24 caracteres, caja ≤ 20.
+  </Step>
+  <Step title="Zona">
+    Radio de 25, 50 u 80 km alrededor de tu estudio.
+  </Step>
+  <Step title="Presupuesto diario">
+    Lo definís vos. El tope visible está en pantalla: no podés publicar por encima.
+  </Step>
+  <Step title="Publicar">
+    Sale a Meta. Después la pausás o reanudás desde `/campanas`.
+  </Step>
+</Steps>
+
+## Google: Search
+
+RSA (títulos y descripciones). Palabras clave y negativas. La landing es **obligatoria**.
+
+Requisitos antes de publicar:
+
+- Google Ads conectado por OAuth.
+- Landing publicada en `{slug}.arquitex.app`. Sin web publicada, no hay campaña.
+- Facturación de Google en orden.
+
+Mínimo **5 keywords activas**. Las negativas de fábrica no se muestran en la UI: ya van.
+
+La URL de la landing es `{slug}.arquitex.app`. No hay otro host para esta pauta.
+
+## Dónde se configura (y dónde no)
+
+| Lugar | Para qué |
+|---|---|
+| `/campanas` | Ver números, pausar, crear. |
+| `/campanas/nueva` | Picker Meta / Google y el lanzador. |
+| Ajustes → Campañas | OAuth de Meta y Google. CAPI solo en avanzado. |
+
+Plantillas de WhatsApp no viven acá. Están en [WhatsApp](/estudio/whatsapp).
+
+## Plan Solo
+
+Una campaña activa. El nurturing de los leads que ya entraron no se corta: el límite es publicar otra campaña, no seguir conversando.

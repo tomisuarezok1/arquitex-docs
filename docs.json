@@ -3,11 +3,11 @@
   "theme": "mint",
   "name": "Arquitex",
   "colors": {
-    "primary": "#F5A623",
-    "light": "#F5A623",
-    "dark": "#F5A623"
+    "primary": "#1a1a1a",
+    "light": "#404040",
+    "dark": "#f5f5f5"
   },
-  "favicon": "/favicon.png",
+  "favicon": "/favicon.svg",
   "navigation": {
     "groups": [
       {
@@ -21,11 +21,12 @@
         "group": "El panel",
         "pages": [
           "panel/acciones",
-          "panel/reporte",
-          "panel/contactos",
           "panel/inbox",
           "panel/pipeline",
-          "panel/agenda"
+          "panel/agenda",
+          "panel/contactos",
+          "panel/reporte",
+          "panel/campanas"
         ]
       },
       {
@@ -40,28 +41,41 @@
       {
         "group": "Tu estudio",
         "pages": [
+          "estudio/configuracion",
+          "estudio/whatsapp",
           "estudio/equipo",
           "estudio/tu-web",
-          "estudio/configuracion"
+          "estudio/planes"
         ]
       }
     ]
   },
   "logo": {
-    "light": "/logo/light.png",
-    "dark": "/logo/dark.png"
+    "light": "/logo/arquitex-light.svg",
+    "dark": "/logo/arquitex-dark.svg"
   },
   "navbar": {
     "primary": {
       "type": "button",
       "label": "Ir al panel",
-      "href": "https://panel.arquitex.app"
+      "href": "https://app.arquitex.app"
     }
+  },
+  "contextual": {
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "cursor",
+      "vscode",
+      "markdown"
+    ]
   },
   "footer": {
     "socials": {
-      "website": "https://arquitex.app",
-      "instagram": "https://instagram.com/arquitex.app"
+      "instagram": "https://instagram.com/arquitex.app",
+      "linkedin": "https://www.linkedin.com/company/arquitex-app"
     }
   }
 }

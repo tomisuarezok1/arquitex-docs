@@ -1,47 +1,85 @@
 ---
 title: "Primeros pasos"
-description: "¿Cómo dejo mi estudio andando?"
+description: "Cómo se configura un estudio nuevo, qué pide el wizard y cuándo se conecta WhatsApp."
 icon: "rocket"
 ---
 
-Poner Arquitex a trabajar es un recorrido de 7 pasos que hacés una sola vez. Al final tenés tu asistente respondiendo desde tu WhatsApp, tu web publicada y tu calendario recibiendo reuniones.
+Cuando un estudio se registra, Arquitex pide lo mínimo para que el asistente pueda hablar. El wizard no es un formulario eterno: son siete pasos, en este orden.
 
-## El recorrido
+WhatsApp **no** es un paso del wizard. Se conecta después, en Inicio, cuando ya hay prueba activa o tarjeta.
+
+## El wizard
 
 <Steps>
   <Step title="Tu estudio">
-    Contanos quiénes son: nombre, logo, especialización, sistemas constructivos, zonas donde operás, trayectoria. Esto le da contexto al asistente para representar tu marca con precisión — y alimenta tu web.
+    Nombre, ciudad, zona de trabajo, especialidad. Esto arma el perfil público y el contexto del asistente.
   </Step>
-  <Step title="Tu cliente ideal">
-    Definí [el filtro de leads](/automatico/filtro-de-leads): qué proyectos tomás, qué condiciones tiene que cumplir una consulta para calificar, y las reglas de descarte. Es la pieza que separa las obras que valen tu tiempo del ruido.
+  <Step title="Tu oferta">
+    La propuesta comercial por tipo de proyecto: qué incluye, precio de referencia, tiempos, tope. No es el filtro de calificación — es lo que el asistente puede cotizar o explicar cuando alguien pregunta.
+  </Step>
+  <Step title="Tu proyecto ideal">
+    El filtro: zona, tipo de proyecto, metros, presupuesto. Lo que el asistente usa para calificar. Se puede cambiar después en Ajustes.
   </Step>
   <Step title="Tu asistente IA">
-    Elegí el nombre y el tono de tu asistente, cargá servicios y precios (anteproyecto, proyecto ejecutivo, precio por m²), tus preguntas frecuentes y lo que **no** debe decir. Lo probás en vivo en el chat de la derecha: cada cambio se aplica al instante.
+    Nombre, tono, qué puede y qué no puede decir. Es quien le habla al lead por WhatsApp. ARQUI es otra cosa: te habla a vos, adentro del panel.
   </Step>
   <Step title="Tu calendario">
-    Conectá tu **Google Calendar** (una sola vez) y marcá tus horarios de atención. Las reuniones que se agenden se crean ahí, con link de Meet automático.
+    Conectás Google Calendar y definís horarios. Sin esto el asistente no puede agendar.
   </Step>
-  <Step title="Tu WhatsApp">
-    Conectá tu número de WhatsApp Business — te redirigimos a Meta y toma unos 5 minutos — o comprá una línea gestionada si no tenés. Acá vive tu asistente. Al conectar quedan creadas tus [plantillas de seguimiento](/estudio/configuracion#plantillas); Meta las revisa (24-48 hs) mientras seguís con el resto.
+  <Step title="Campañas y tu web">
+    Subís la galería de obras (las mismas fotos sirven para la web y para los anuncios) y decís si querés pautar. La web en `{slug}.arquitex.app` es opcional, salvo que vayas a correr anuncios de Google: ahí la landing publicada es requisito.
   </Step>
-  <Step title="Tu web">
-    Personalizá los textos e imágenes de tu web de captación con preview en vivo. El botón **✦ Redactar con IA** te escribe el copy si no querés arrancar de cero. Más sobre la web: [Tu web](/estudio/tu-web).
-  </Step>
-  <Step title="Revisión y activación">
-    Repasá todo, cargá el WhatsApp y email donde querés recibir los avisos, y tocá **Activar**. Arrancás con **14 días de prueba**; después son \$500 USD/mes y podés cancelar cuando quieras.
+  <Step title="Revisión">
+    Un resumen de lo que configuraste. **Activar** arranca la prueba.
   </Step>
 </Steps>
 
 <Note>
-Si te queda alguna conexión pendiente (Calendar o WhatsApp), la pantalla **"Casi listo"** te muestra qué falta. Cuando las dos están conectadas, el sistema se activa solo. Y si preferís, lo terminamos con vos — escribinos.
+  Activar no conecta WhatsApp. Te lleva a Inicio: primero la prueba (o la tarjeta), después WhatsApp, el calendario si faltara, y opcionalmente Meta.
 </Note>
 
-## Entrar al panel
+## Después de Activar: Inicio
 
-El panel vive en **panel.arquitex.app**. Entrás con tu email y contraseña. Si te invitaron al estudio de otra persona, el link de invitación te pide elegir una contraseña y listo — más detalle en [Tu equipo](/estudio/equipo).
+La pantalla se llama **Casi listo**. El orden es este:
 
-## Después de activar
+1. **Prueba o tarjeta.** Conectar WhatsApp pide una suscripción activa o una prueba en curso. Sin eso, el botón de WhatsApp no arranca.
+2. **WhatsApp.** OAuth de Meta. El número deja de funcionar en la app de WhatsApp Business del celular: tiene que ser un número dedicado. Arquitex no vende líneas gestionadas desde el panel.
+3. **Calendario**, si todavía no lo conectaste en el wizard.
+4. **Meta**, si querés ver pauta o lanzar campañas. Se puede saltear.
+5. Recién ahí el estudio pasa a activo — hace falta WhatsApp y calendario.
 
-Los primeros días, el trabajo es mirar cómo conversa el asistente y ajustar: el tono, las FAQs, el filtro. Todo lo del onboarding se puede retocar cuando quieras desde **Configuración** — nada quedó grabado en piedra.
+<Tip>
+  Si salteás Meta en Inicio, lo conectás después en [Campañas](/panel/campanas) o en [Ajustes → Campañas](/estudio/configuracion).
+</Tip>
 
-La rutina diaria de uso es simple: arrancá por [Acciones](/panel/acciones) (¿qué hago ahora?), seguí por el [Inbox](/panel/inbox) si hay conversaciones esperando, y mirá el [Reporte](/panel/reporte) para el pulso del negocio.
+## El primer lead
+
+Cuando alguien te escribe:
+
+1. El asistente responde.
+2. Califica según tu filtro.
+3. Si califica, ofrece horarios y confirma.
+4. Vos ves la conversación en [Chats](/panel/inbox) y el proyecto en [Proyectos](/panel/pipeline).
+
+Si el lead no avanza, ARQUI te lo pone en [ARQUI](/panel/acciones).
+
+## Qué no hace el onboarding
+
+- No te pide pixel, token ni CAPI pegados a mano.
+- No te hace comprar una línea de WhatsApp.
+- No te obliga a publicar la web, salvo que quieras anuncios de Google.
+- No te deja en un CRM vacío: el asistente ya puede hablar.
+
+## Después
+
+<Columns>
+  <Card title="ARQUI" icon="list-check" href="/panel/acciones">
+    La cola de lo urgente.
+  </Card>
+  <Card title="Campañas" icon="megaphone" href="/panel/campanas">
+    Conectar Meta y lanzar pauta.
+  </Card>
+  <Card title="Planes" icon="credit-card" href="/estudio/planes">
+    Solo, Equipo y Escala.
+  </Card>
+</Columns>

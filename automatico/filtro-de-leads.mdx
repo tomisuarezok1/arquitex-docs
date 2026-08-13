@@ -4,36 +4,36 @@ description: "¿Qué leads pasan y cuáles no?"
 icon: "filter"
 ---
 
-No todas las consultas valen tu tiempo. El filtro de leads es la definición de **tu cliente ideal**: el asistente lo usa para calificar cada consulta mientras conversa, y el panel te muestra el resultado en todos lados como **En perfil** o **Fuera de perfil** — siempre con el motivo explícito.
+No todas las consultas valen tu tiempo. El filtro es la definición de **tu cliente ideal**: el asistente lo usa para calificar cada consulta, y el panel te muestra el resultado como **En perfil** o **Fuera de perfil** — siempre con el motivo explícito.
 
 ## Qué define el filtro
 
-Se configura en **Configuración → Asistente** (solo el dueño) y tiene tres partes:
+Se configura en **Ajustes → Asistente** (solo el dueño) y tiene tres partes:
 
-1. **Qué proyectos tomás**: rubros (casa, comercio, edificio, interiorismo), tipos de obra (desde cero / remodelación) y etapas de proyecto que atendés. Lo que dejás vacío vale como "todo".
-2. **Filtros para calificar**: las condiciones que un lead tiene que cumplir — zonas que califican, tamaño mínimo en m², horizonte de inicio máximo, y si exigís que tenga terreno.
-3. **Descarte automático (avanzado)**: hasta 2 reglas tipo *"descartar si…"* para casos puntuales que lo anterior no cubre.
+1. **Qué proyectos tomás**: tipo (casa, comercio, edificio, interiorismo), intervención (obra nueva / remodelación) y etapas de proyecto que atendés. Lo que dejás vacío vale como "todo".
+2. **Filtros para calificar**: zonas que califican, tamaño mínimo en m², horizonte de inicio máximo, y si exigís que tenga terreno.
+3. **Descarte automático (avanzado)**: hasta 2 reglas tipo *"descartar si…"* para casos puntuales.
 
 ## Cómo trabaja
 
-El asistente **no interroga**: va juntando los datos en la conversación (rubro, m², zona, terreno, cuándo arranca) y evalúa contra tus reglas. Recién marca a un lead **En perfil** cuando cumple todo y no faltan datos.
+El asistente **no interroga**: va juntando los datos en la conversación y evalúa contra tus reglas. Recién marca **En perfil** cuando cumple todo y no faltan datos.
 
 Cuando una consulta no pasa, queda **Fuera de perfil** con el motivo exacto — por ejemplo:
 
 - *"El proyecto (~40 m²) está por debajo del mínimo del estudio (100 m²)."*
 - *"La zona 'Saldán' no está entre las que cubre el estudio."*
-- *"El estudio no toma proyectos del rubro 'Interiorismo'."*
+- *"El estudio no toma proyectos de interiorismo."*
 
 <Note>
-**Fuera de perfil no significa borrado.** El contacto queda en tu base (lo ves en [Contactos](/panel/contactos) filtrando *Fuera de perfil*), la conversación queda en el Inbox, y el número de descartados del período está en el [Reporte](/panel/reporte), clickeable. El filtro te ahorra el tiempo; el dato no se pierde.
+**Fuera de perfil no significa borrado.** El contacto queda en tu base (lo ves en [Contactos](/panel/contactos) filtrando *Descartados*), la conversación queda en [Chats](/panel/inbox), y el número de descartados del período está en el [Reporte](/panel/reporte). El filtro te ahorra el tiempo; el dato no se pierde.
 </Note>
 
 ## Por qué importa afinarlo
 
-El filtro es lo que hace que [Acciones](/panel/acciones) te muestre solo lo que vale la pena y que el número de "Cualificadas" del reporte signifique algo. Un filtro muy abierto te llena de ruido; uno muy cerrado te hace perder obras.
+El filtro es lo que hace que [ARQUI](/panel/acciones) te muestre solo lo que vale la pena y que "Cualificadas" del reporte signifique algo. Muy abierto te llena de ruido; muy cerrado te hace perder proyectos.
 
-Para eso está el contrapeso: **ARQUI cuestiona el filtro con tus propios datos**. Si detecta que descartaste un grupo de obras parecidas que quizás valían la pena, te lo muestra en el Reporte con la propuesta concreta de ajuste. Vos decidís — [así funciona](/automatico/arqui#cuestiona-su-propio-filtro).
+El contrapeso: **ARQUI cuestiona el filtro con tus propios datos**. Si detecta un grupo descartado que quizás valía la pena, te lo muestra en `/arqui` con la propuesta concreta. Vos decidís — [así funciona](/automatico/arqui#cuestiona-su-propio-filtro).
 
 <Tip>
-La **Radiografía de la demanda** del Reporte te muestra qué te pide el mercado realmente — rubros, zonas, superficies. Contrastarla con tu filtro cada tanto es la mejor forma de mantenerlo honesto.
+La **Radiografía de la demanda** del Reporte te muestra qué te pide el mercado — tipo de proyecto, intervención, zonas, superficies. Contrastarla con tu filtro cada tanto es la mejor forma de mantenerlo honesto.
 </Tip>

@@ -1,0 +1,33 @@
+---
+title: "WhatsApp"
+description: "Cómo se conecta el número del estudio y dónde se editan las plantillas."
+icon: "whatsapp"
+---
+
+WhatsApp es el canal por el que el asistente le habla al lead. Se configura en **Ajustes → WhatsApp**, con dos secciones: **Conexión** y **Plantillas**.
+
+No es un paso del wizard. Se conecta en **Inicio**, después de Activar, cuando ya hay prueba activa o tarjeta. Sin suscripción activa (o prueba en curso), el botón de conectar no arranca.
+
+## Conexión
+
+OAuth de Meta. El número deja de funcionar en la app de WhatsApp Business del celular: tiene que ser un **número dedicado**. Arquitex no vende líneas gestionadas desde el panel.
+
+Solo el dueño puede conectar o desconectar. Desconectar deja al estudio sin bot, sin chats, sin recordatorios y sin seguimientos. El resto del equipo ve el estado en modo lectura.
+
+<Note>
+Conectar WhatsApp pide prueba activa o tarjeta. El wizard termina en Activar; Inicio es el lugar donde se engancha el número.
+</Note>
+
+## Plantillas
+
+Los mensajes de seguimiento que el asistente manda a los leads que todavía no agendaron. Hay una secuencia por tipo de consulta, con pasos espaciados: inmediato, +6 horas, +1 día, +3, +7, +10 días y seguimiento mensual. Podés editar cada texto.
+
+Cada cambio se re-envía a WhatsApp para aprobación de Meta — puede demorar unas horas. El estado (*Aprobada*, *En revisión*, *Rechazada*) se ve en la misma pantalla. No toques las variables `{{1}}`, `{{2}}`: son los datos que se completan solos.
+
+Las plantillas se aprueban contra la cuenta de WhatsApp del número. Si el número cambia, hay que volver a aprobarlas.
+
+<Tip>
+`/configuracion/plantillas` redirige a `/configuracion/whatsapp?seccion=plantillas`. No hay un ítem suelto de Plantillas en el menú de Ajustes.
+</Tip>
+
+El costo de envío de plantillas lo cobra Meta. Lo ves en Facturación → **Consumo**. Detalle de planes en [Planes](/estudio/planes).
