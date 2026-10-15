@@ -47,6 +47,10 @@
           "estudio/tu-web",
           "estudio/planes"
         ]
+      },
+      {
+        "group": "Novedades",
+        "pages": ["novedades"]
       }
     ]
   },
