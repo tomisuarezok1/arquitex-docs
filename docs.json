@@ -49,6 +49,10 @@
         ]
       },
       {
+        "group": "Referencia",
+        "pages": ["glosario"]
+      },
+      {
         "group": "Novedades",
         "pages": ["novedades"]
       }
