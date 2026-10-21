@@ -31,6 +31,7 @@ Cada columna muestra cuántos proyectos tiene y la **suma de honorarios** de esa
 - Arriba, el **tipo de proyecto** (casa, comercio, edificio, interiorismo) con su color.
 - **Chips**: intervención (obra nueva / remodelación) y zona. Si falta alguno, el hueco se dice (*sin definir*, *sin zona*).
 - A la derecha: honorarios (o *sin monto*) y **días en la etapa**.
+- En la columna **Nuevo**, si todavía no hay conversación, abajo hay una franja **Iniciar conversación**. [Cómo mandar el primer mensaje](#iniciar-conversacion).
 
 El tiempo en etapa se tintea de a poco: ritmo normal hasta ~30 días, más lento después, y recién muy detenido se pone rojo. El umbral de “estancada” para ARQUI sigue siendo 15 días, pero ese filtro **ya no está en la barra**: se abre con `/pipeline?estancadas=1` (por ejemplo desde ARQUI).
 
@@ -44,12 +45,52 @@ Todo proyecto cerrado se puede **reabrir** desde su detalle. Si un lead dado por
 
 ## El detalle del proyecto
 
-Al tocar una tarjeta se abre el drawer, con dos pestañas:
+Al tocar una tarjeta se abre el cajón, con dos pestañas:
 
-- **Proyecto**: tipo, intervención, m², zona, etapa, honorarios — editable en el lugar. Link a la conversación en [Chats](/panel/inbox).
+- **Proyecto**: tipo, intervención, m², zona, etapa, honorarios — editable en el lugar. Si ya hay conversación, el primer botón dice **Conversación** y abre [Chats](/panel/inbox). Si todavía no hay, dice **Iniciar conversación**.
 - **Actividad**: la línea de tiempo, donde también podés agregar notas.
 
-No hay pestaña de Agenda ni de no-show acá: las reuniones viven en [Agenda](/panel/agenda). La lectura larga de ARQUI tampoco está en este drawer; la cola y el coaching están en [ARQUI](/panel/acciones).
+No hay pestaña de Agenda ni de no-show acá: las reuniones viven en [Agenda](/panel/agenda). La lectura larga de ARQUI tampoco está en este cajón; la cola y el coaching están en [ARQUI](/panel/acciones).
+
+## Iniciar conversación {#iniciar-conversacion}
+
+Si el [lead](/glosario#lead) todavía no tiene conversación, podés escribirle por WhatsApp. El botón **Iniciar conversación** solo aparece en ese caso, en tres lugares:
+
+- En la tarjeta del proyecto, en la columna **Nuevo**: una franja abajo.
+- En el cajón del proyecto: el primer botón, en ámbar, al lado de **Ver contacto**. Si ya hay conversación, ese botón dice **Conversación**.
+- En la [ficha del contacto](/panel/contactos#la-ficha): arriba a la derecha. Si el contacto no tiene teléfono, el botón se ve apagado.
+
+<Frame caption="En la compu, la columna Nuevo con la franja Iniciar conversación">
+  <img src="/images/panel/pipeline-nuevo-compu.png" alt="Columna Nuevo de Proyectos en la compu. La tarjeta del proyecto tiene abajo una franja Iniciar conversación." />
+</Frame>
+
+<Frame caption="En el celular, la misma franja al pie de la tarjeta">
+  <img src="/images/panel/pipeline-nuevo-cel.png" alt="Proyectos en el celular, en Nuevo. La tarjeta muestra abajo la franja Iniciar conversación." />
+</Frame>
+
+<Frame caption="En el cajón, Iniciar conversación al lado de Ver contacto">
+  <img src="/images/panel/cajon-proyecto-compu.png" alt="Cajón de un proyecto sin conversación. El primer botón, en ámbar, dice Iniciar conversación y está al lado de Ver contacto." />
+</Frame>
+
+<Frame caption="En la ficha del contacto, el botón está arriba a la derecha">
+  <img src="/images/panel/ficha-contacto-compu.png" alt="Ficha de un contacto sin conversación. Arriba a la derecha está el botón Iniciar conversación." />
+</Frame>
+
+Al tocarlo se abre una ventana. A la izquierda, las [plantillas](/glosario#plantilla) aprobadas de **Primer contacto**. A la derecha, **Así le llega**: el mensaje tal cual lo recibe, con el nombre del lead, el del estudio y el del asistente. En el celular, la vista previa queda debajo de las plantillas.
+
+<Frame caption="En la compu: la plantilla a la izquierda y Así le llega a la derecha">
+  <img src="/images/panel/ventana-plantilla-compu.png" alt="Ventana Iniciar conversación en la compu. A la izquierda, una plantilla de Primer contacto. A la derecha, Así le llega: el mensaje con el nombre del lead, del estudio y del asistente. Abajo, el aviso de mensaje pago, Cancelar y Enviar mensaje pago." />
+</Frame>
+
+<Frame caption="En el celular, Así le llega queda debajo de la plantilla">
+  <img src="/images/panel/ventana-plantilla-cel.png" alt="Ventana Iniciar conversación en el celular. Arriba la plantilla de Primer contacto y, debajo, Así le llega. Al pie, el aviso de mensaje pago y Enviar mensaje pago." />
+</Frame>
+
+Abajo, un aviso: «Es un mensaje pago de WhatsApp. Si no responde, el seguimiento le vuelve a escribir en 2 días.» **Cancelar** cierra sin mandar. **Enviar mensaje pago** manda la plantilla.
+
+Al enviar, Arquitex manda la plantilla, crea la conversación en [Chats](/panel/inbox) y el proyecto pasa a tener conversación.
+
+Si no hay plantillas de Primer contacto aprobadas, la ventana lo dice y no hay nada para elegir. Las plantillas se ven en [Ajustes → WhatsApp](/estudio/whatsapp#plantillas).
 
 ## Limpieza
 
